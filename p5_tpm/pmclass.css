@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+body {
+    background-image: url('gambar/bg1.png');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.containernav {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(90deg,#86AEE2 0%, #608BC1 50%, #5B85BA 100%);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 70px;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin-left: 700px;
+    gap: 30px;
+}
+
+.menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li a:hover, .menu ul li a:active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: #0a0a0a; /* Warna coklat gelap untuk judul */
+    text-align: center;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #8fabda; /* Warna coklat untuk tombol */
+    color: rgb(7, 7, 7);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 35%;
+    margin-left: 450px;
+}
+
+button:hover {
+    background-color: #3f78c4; /* Warna gelap saat hover */
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff; /* Latar belakang tabel putih untuk kontras */
+    border-radius: 5px; /* Sudut membulat untuk tabel */
+    overflow: hidden; /* Menyembunyikan border bulat */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+    position: relative; /* Agar dapat ditumpuk dengan benar */
+    z-index: 1; /* Pastikan tabel berada di atas */
+}
+
+td {
+    padding: 10px; /* Padding dalam sel tabel */
+    border: 1px solid #ddd; /* Border untuk sel tabel */
+    text-align: left; /* Teks rata kiri untuk sel tabel */
+}
+
+/* Menambahkan warna latar belakang lavender pada kolom pertama, kedua, dan ketiga */
+table tr td:first-child,
+table tr td:nth-child(2),
+table tr td:nth-child(3) {
+    background-color: rgb(252, 248, 251);
+}
+
+/* Menambahkan warna latar belakang pada nama header kolom NO, NIS, Nama Peserta Diklat */
+table th:nth-child(1),
+table th:nth-child(2),
+table th:nth-child(3) {
+    background-color: #C8A2D1; /* Lavender muda untuk header */
+    color: #fff; /* Warna teks putih */
+    font-weight: bold; /* Membuat teks tebal */
+}
+
+/* Make the table headers bold */
+table tr:first-child td {
+    font-weight: bold;
+}
+
+/* Style the table with black borders */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+table td, table th {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Menghapus garis bawah pada baris pertama tabel */
+table tr:first-child td {
+    border-top: 2px solid black; /* Garis atas pertama */
+}
+
+/* Menghapus garis bawah di baris pertama tabel */
+table tr:first-child td:last-child {
+    border-bottom: none; /* Menghapus garis bawah di sel terakhir baris pertama */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
+}
+
+tr:hover {
+    background-color: #e2e2e2; /* Warna saat hover pada baris tabel */
+}
+
+.hidden {
+    display: none; /* Menyembunyikan elemen dengan kelas 'hidden' */
+}
+
+footer {
+    background-color: #001f3f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.logofooter img {
+    width: 80px;
+    height: auto;
+}
